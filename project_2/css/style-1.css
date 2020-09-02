@@ -1,0 +1,1565 @@
+@import "tpa=https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i&subset=cyrillic";
+
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  cursor: pointer;
+}
+
+body {
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+*,
+:before,
+:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.cf:before,
+.cf:after {
+  content: " ";
+  display: table;
+}
+
+.cf:after {
+  clear: both;
+}
+
+.cf {
+  *zoom: 1;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-weight: normal;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+#map {
+  height: 500px;
+  width: 100%;
+}
+
+.container {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.wrap {
+  max-width: 1920px;
+  margin: 0 auto;
+  background: #ffffff;
+}
+
+.main {
+  height: 617px;
+  background: url(../img/main.jpg) no-repeat top;
+  background-size: cover;
+}
+
+header {
+  padding-top: 25px;
+  margin-bottom: 24px;
+}
+
+header .address {
+  float: left;
+  margin-left: 132px;
+}
+
+header .logo {
+  float: left;
+}
+
+.right-info {
+  float: right;
+}
+
+.right-info .phone {
+  display: block;
+  font-size: 24px;
+  font-weight: 500;
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 3px;
+}
+
+.right-info .phone:before {
+  content: "";
+  display: block;
+  width: 24px;
+  height: 24px;
+  background: url(../img/phone.png)
+    /*tpa=http://www.avtobaffer.com/images/phone.png*/
+  ;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.right-info .call {
+  width: 150px;
+  height: 27px;
+  line-height: 27px;
+  float: right;
+  text-align: center;
+  background: #ee3c40;
+  color: #fff;
+  font-weight: 500;
+  font-size: 14px;
+  border-radius: 5px;
+}
+
+.right-info .call:hover {
+  background: #de2e32;
+}
+
+.main-wrap h1 {
+  font-size: 38px;
+  text-align: center;
+  font-weight: 900;
+  margin-bottom: 4px;
+}
+
+.main-wrap h2 {
+  text-align: center;
+  font-size: 24px;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.main-wrap h2 .underline {
+  border-bottom: 3px dashed #ea151a;
+}
+
+.main-wrap h2 .blue {
+  border-bottom: 3px dashed #ea151a;
+  font-weight: 500;
+}
+
+.main-wrap .price {
+  float: left;
+  margin-left: 285px;
+}
+
+.main-wrap .price p {
+  font-weight: 700;
+  float: left;
+  margin-top: 10px;
+  margin-right: 7px;
+}
+
+.main-wrap .price p span {
+  text-decoration: line-through;
+}
+
+.main-wrap .price div {
+  float: left;
+  width: 128px;
+  height: 40px;
+  background: url(../img/price.png)
+    /*tpa=http://www.avtobaffer.com/images/price.png*/
+    no-repeat top;
+  color: #fff;
+  text-align: center;
+  font-size: 33.33px;
+  font-weight: 900;
+  padding-left: 6px;
+}
+
+.main-wrap .price div span {
+  font-size: 21.12px;
+  font-weight: 400;
+}
+
+.main-wrap ul {
+  float: right;
+  position: relative;
+  margin-bottom: 35px;
+  margin-top: 9px;
+}
+
+.main-wrap ul:after {
+  content: "";
+  display: block;
+  width: 114px;
+  height: 85px;
+  background: url(../img/main-arrow.png)
+    /*tpa=http://www.avtobaffer.com/images/main-arrow.png*/
+  ;
+  position: absolute;
+  bottom: -90px;
+  left: 52px;
+}
+
+.main-wrap ul li {
+  width: 366px;
+  height: 43px;
+  background: url(../img/li.png)
+    /*tpa=http://www.avtobaffer.com/images/li.png*/
+    no-repeat top;
+  color: #fff;
+  padding-left: 29px;
+  padding-top: 3px;
+  margin-bottom: 7px;
+}
+
+.main-wrap ul li h3 {
+  font-size: 13px;
+  font-weight: 900;
+}
+
+.main-wrap ul li p {
+  font-size: 12.03px;
+}
+
+.main-wrap .btn {
+  clear: both;
+  margin: 0 auto;
+}
+
+.btn {
+  display: block;
+  width: 280px;
+  text-align: center;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #f82c2f;
+  height: 60px;
+  line-height: 60px;
+  position: relative;
+  background: #ed3c3f;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#ed3c3f, #a41214);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#ed3c3f, #a41214);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#ed3c3f, #a41214);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#ed3c3f, #a41214);
+  /* Standard syntax */
+  border-radius: 5px;
+  padding-left: 26px;
+  border: 0;
+  outline: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #a41214;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(#a41214, #ed3c3f);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(#a41214, #ed3c3f);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(#a41214, #ed3c3f);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(#a41214, #ed3c3f);
+  /* Standard syntax */
+}
+
+.btn:before {
+  content: "";
+  display: block;
+  width: 30px;
+  height: 22px;
+  background: url(../img/btn.png)
+    /*tpa=http://www.avtobaffer.com/images/btn.png*/
+  ;
+  position: absolute;
+  left: 28px;
+  top: 20px;
+}
+
+h2.title {
+  position: relative;
+  display: inline-block;
+  padding-left: 50px;
+  padding-right: 50px;
+  text-transform: uppercase;
+  font-size: 30px;
+  font-weight: 900;
+}
+
+h2.title:before {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 46px;
+  background: url(../img/line-before.png)
+    /*tpa=http://www.avtobaffer.com/images/line-before.png*/
+  ;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+h2.title:after {
+  content: "";
+  display: block;
+  width: 36px;
+  height: 46px;
+  background: url(../img/line-after.png)
+    /*tpa=http://www.avtobaffer.com/images/line-after.png*/
+  ;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.problem {
+  text-align: center;
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.problem .container {
+  width: 1050px;
+}
+
+.problem .sub-title {
+  font-size: 24px;
+  margin-bottom: 54px;
+}
+
+.problem-wrap {
+  margin-bottom: 38px;
+}
+
+.problem-wrap .left h3 {
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 40px;
+  line-height: 43px;
+  text-transform: uppercase;
+  text-align: left;
+  padding-left: 95px;
+}
+
+.problem-wrap .right h3 {
+  font-size: 18px;
+  font-weight: 900;
+  margin-bottom: 42px;
+  background: #094277;
+  color: #fff;
+  line-height: 43px;
+  text-transform: uppercase;
+  max-width: 345px;
+}
+
+.problem-wrap .left {
+  float: left;
+  width: 50%;
+  padding-left: 91px;
+}
+
+.problem-wrap .right {
+  float: left;
+  width: 50%;
+  position: relative;
+  padding-left: 54px;
+}
+
+.problem-wrap .right:before {
+  content: "";
+  display: block;
+  width: 45px;
+  height: 213px;
+  background: url(../img/problem.png)
+    /*tpa=http://www.avtobaffer.com/images/problem.png*/
+  ;
+  position: absolute;
+  left: -34px;
+  top: -31px;
+}
+
+.problem-wrap .info {
+  text-align: left;
+  padding-left: 95px;
+  position: relative;
+}
+
+.problem-wrap .info p {
+  font-size: 18px;
+  color: #0d406e;
+  font-weight: 900;
+}
+
+.problem-wrap .info h4 {
+  font-size: 24px;
+  color: #e73b41;
+  font-weight: 900;
+}
+
+.problem-wrap .info h5 {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.problem-wrap .left .info:before {
+  content: "";
+  display: block;
+  width: 64px;
+  height: 64px;
+  background: url(../img/info-1.png)
+    /*tpa=http://www.avtobaffer.com/images/info-1.png*/
+  ;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.problem-wrap .right .info:before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 64px;
+  background: url(../img/info-2.png)
+    /*tpa=http://www.avtobaffer.com/images/info-2.png*/
+  ;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.problem-wrap .right .info {
+  padding-left: 71px;
+}
+
+.problem-box {
+  border: 1px solid #e9eaee;
+  padding: 25px 50px;
+  margin-bottom: 60px;
+  max-width: 960px;
+  margin: 0 auto;
+  margin-bottom: 59px;
+}
+
+.problem-box p {
+  font-size: 18px;
+  margin-bottom: 24px;
+}
+
+.problem-box p span {
+  font-weight: 900;
+  color: #e03437;
+}
+
+.problem-box .btn {
+  margin: 0 auto;
+  margin-bottom: -57px;
+}
+
+.problem-box .btn:after {
+  display: block;
+  content: "";
+  width: 114px;
+  height: 85px;
+  background: url(../img/main-arrow.png)
+    /*tpa=http://www.avtobaffer.com/images/main-arrow.png*/
+  ;
+  position: absolute;
+  right: -142px;
+  top: -30px;
+}
+
+.warning-item {
+  width: 50%;
+  float: left;
+  padding: 0 15px;
+}
+
+.warning-item:last-of-type p {
+  padding-left: 0;
+}
+
+.warning-item .img {
+  margin-bottom: 17px;
+  min-height: 115px;
+}
+
+.warning-item h3 {
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin-bottom: 44px;
+}
+
+.warning-item p {
+  text-align: left;
+  margin-bottom: 20px;
+  padding-left: 27px;
+}
+
+.shema {
+  text-align: center;
+  background: url(../img/shema.jpg)
+    /*tpa=http://www.avtobaffer.com/images/shema.jpg*/
+    no-repeat top;
+  height: auto;
+  background-position: top;
+  padding: 60px 0;
+  background-size: cover;
+}
+
+.risk .title {
+  margin-bottom: 36px;
+}
+
+.risk-wrap {
+  margin-bottom: 25px;
+}
+
+.risk-item {
+  float: left;
+  width: 33.333%;
+  position: relative;
+}
+
+.risk-item:after {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 79px;
+  background: url(../img/shema-arrow.png)
+    /*tpa=http://www.avtobaffer.com/images/shema-arrow.png*/
+  ;
+  position: absolute;
+  right: -24px;
+  top: 30px;
+}
+
+.risk-item:last-of-type:after {
+  display: none;
+}
+
+.risk-item h3 {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 900;
+}
+
+.risk-item img {
+  margin-bottom: 5px;
+}
+
+.share {
+  background: url(../img/5.png)
+    /*tpa=http://www.avtobaffer.com/images/share.jpg*/
+    no-repeat top;
+  color: #fff;
+  padding-top: 42px;
+  padding-bottom: 20px;
+  background-size: cover;
+}
+
+.share-wrap h2 {
+  font-size: 27px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  text-transform: uppercase;
+}
+
+.share-wrap h3 {
+  font-size: 20.25px;
+  font-weight: 500;
+  color: #ff5357;
+  margin-bottom: 52px;
+  text-transform: uppercase;
+}
+
+.share-wrap .left {
+  float: left;
+  width: calc(100% - 340px);
+  padding-right: 30px;
+}
+
+.share-wrap form {
+  text-align: center;
+  background: rgba(0, 0, 0, 0.37);
+  border-radius: 4px;
+  padding: 30px;
+  position: relative;
+  padding-bottom: 25px;
+}
+
+.share-wrap form:before {
+  content: "";
+  display: block;
+  width: 91px;
+  height: 45px;
+  background: url(../img/form-arrow.png)
+    /*tpa=http://www.avtobaffer.com/images/form-arrow.png*/
+  ;
+  position: absolute;
+  left: -110px;
+  bottom: 37px;
+}
+
+.share-wrap .right {
+  float: left;
+  width: 340px;
+  padding-top: 6px;
+}
+
+.share-wrap .price {
+  float: right;
+  margin-bottom: 212px;
+}
+
+.share-wrap .price p {
+  font-weight: 700;
+  float: left;
+  margin-top: 10px;
+  margin-right: 16px;
+}
+
+.share-wrap .price p span {
+  text-decoration: line-through;
+}
+
+.share-wrap .price div {
+  float: left;
+  width: 128px;
+  height: 40px;
+  background: url(../img/price.png)
+    /*tpa=http://www.avtobaffer.com/images/price.png*/
+    no-repeat top;
+  color: #fff;
+  text-align: center;
+  font-size: 33.33px;
+  font-weight: 900;
+  padding-left: 6px;
+}
+
+.share-wrap .price div span {
+  font-size: 21.12px;
+  font-weight: 400;
+}
+
+.share-wrap form p {
+  font-size: 18px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+select,
+.share-wrap form input[type="text"] {
+  margin-bottom: 9px;
+  outline: none;
+}
+
+.share-wrap form button {
+  width: 100%;
+  margin-top: 19px;
+}
+
+.reviews {
+  margin-top: 30px;
+}
+
+.reviews img {
+  width: 100%;
+  display: block;
+}
+
+.reviews h2 {
+  max-width: 625px;
+  text-align: center;
+  margin: auto;
+  font-weight: 1000;
+}
+
+.reviews h3 {
+  font-size: 24px;
+  font-family: "CirceRounded", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+  margin: 15px 0;
+  text-align: center;
+}
+
+.reviews span {
+  text-align: center;
+  font-weight: 600;
+  font-size: 20px;
+  font-family: "CirceBold", Arial, sans-serif;
+  line-height: 1.55;
+}
+
+.reviews p {
+  margin: 10px 13px;
+  font-size: 20px;
+  font-family: "CirceRounded", Arial, sans-serif;
+  line-height: 1.55;
+  font-weight: 400;
+  background-position: center center;
+}
+
+.reviews__blocks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.reviews__block {
+  padding-bottom: 20px;
+  margin: 40px 0;
+  width: calc(33% - 10px);
+  box-shadow: 7px 7px 11px 7px rgba(50, 50, 50, 0.2);
+}
+
+@media (max-width: 480px) {
+  .reviews p {
+    margin: 10px 4px;
+  }
+
+  .reviews__blocks {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .reviews__block {
+    width: calc(100% - 10px);
+  }
+}
+
+input[name="name"] {
+  background: #fff url(../img/input-name.png)
+    /*tpa=http://www.avtobaffer.com/images/input-name.png*/
+    no-repeat 14px;
+}
+
+input[name="phone"] {
+  background: #fff url(../img/input-phone.png)
+    /*tpa=http://www.avtobaffer.com/images/input-phone.png*/
+    no-repeat 14px;
+}
+
+input[name="car"] {
+  background: #fff url(../img/input-car.png)
+    /*tpa=http://www.avtobaffer.com/images/input-car.png*/
+    no-repeat 14px;
+}
+
+select,
+input[type="tel"] {
+  display: block;
+  width: 100%;
+  height: 42px;
+  border: 0;
+  padding-left: 35px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+select,
+input[type="text"] {
+  display: block;
+  width: 100%;
+  height: 42px;
+  border: 0;
+  padding-left: 35px;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+}
+
+.share-wrap .right .in {
+  text-align: left;
+  padding-left: 36px;
+}
+
+.share-wrap .right .in p {
+  font-size: 24px;
+  font-weight: 700;
+  margin-bottom: 11px;
+  position: relative;
+  clear: both;
+}
+
+.share-wrap .right .in p img {
+  position: absolute;
+  left: 128px;
+  top: -17px;
+}
+
+.share-wrap .right .in p span {
+  display: inline-block;
+  vertical-align: top;
+  width: 48px;
+  height: 56px;
+  background: url(../img/in.png)
+    /*tpa=http://www.avtobaffer.com/images/in.png*/
+    no-repeat top;
+  line-height: 52px;
+  margin-top: -10px;
+  margin-left: 5px;
+  text-align: center;
+  margin-right: 9px;
+}
+
+.easy-wrap {
+  clear: both;
+}
+
+.easy-item {
+  float: left;
+  margin-right: 44px;
+}
+
+.easy-item .img {
+  width: 53px;
+  float: left;
+}
+
+.easy-item p {
+  width: calc(100% - 53px);
+  float: left;
+  font-size: 16.65px;
+  padding-left: 10px;
+  margin-top: 6px;
+}
+
+footer {
+  background: #041428;
+  color: #fff;
+  padding-top: 66px;
+  padding-bottom: 40px;
+}
+
+footer .logo {
+  float: left;
+}
+
+footer .address {
+  float: left;
+  margin-left: 128px;
+}
+
+footer .address p {
+  color: #fff;
+}
+
+footer .right-info .phone {
+  color: #fff;
+}
+
+.in-stock {
+  position: fixed;
+  right: 0;
+  top: 150px;
+  background: #094277;
+  color: #fff;
+  width: 160px;
+  text-align: center;
+  padding-top: 25px;
+  padding-bottom: 20px;
+  box-shadow: 0 0 28px #ccc;
+}
+
+.in-stock img {
+  position: absolute;
+  left: 25px;
+  top: 45px;
+}
+
+.in-stock .close {
+  position: absolute;
+  width: 22px;
+  height: 22px;
+  display: block;
+  background: url(../img/close.jpg)
+    /*tpa=http://www.avtobaffer.com/images/close.jpg*/
+  ;
+  right: 0;
+  top: 0;
+}
+
+.in-stock .close:hover {
+  opacity: 0.8;
+}
+
+.in-stock .order {
+  display: block;
+  width: 100%;
+  color: #fff;
+  text-transform: uppercase;
+  background: #ed3c3f;
+  background: -webkit-linear-gradient(#ed3c3f, #a41214);
+  background: -o-linear-gradient(#ed3c3f, #a41214);
+  background: -moz-linear-gradient(#ed3c3f, #a41214);
+  background: linear-gradient(#ed3c3f, #a41214);
+  height: 30px;
+  line-height: 30px;
+  border-radius: 4px;
+  font-size: 14.05px;
+  font-weight: 700;
+  max-width: 115px;
+  margin: 0 auto;
+}
+
+.in-stock .order:hover {
+  background: #a41214;
+  background: -webkit-linear-gradient(#a41214, #ed3c3f);
+  background: -o-linear-gradient(#a41214, #ed3c3f);
+  background: -moz-linear-gradient(#a41214, #ed3c3f);
+  background: linear-gradient(#a41214, #ed3c3f);
+}
+
+.in-stock h3 {
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.in-stock p {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.in-stock p span {
+  display: inline-block;
+  vertical-align: top;
+  width: 48px;
+  height: 56px;
+  background: url(../img/in.png)
+    /*tpa=http://www.avtobaffer.com/images/in.png*/
+    no-repeat top;
+  line-height: 52px;
+  margin-top: -10px;
+}
+
+#correct-number {
+  height: 33px;
+  background: #f6f7f9;
+  font-size: 18.08px;
+  color: #000;
+  width: 180px;
+  vertical-align: top;
+  display: none;
+  padding: 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.correct strong {
+  font-size: 18.09px;
+  font-weight: 600;
+  line-height: 33px;
+}
+
+.correct .change {
+  font-size: 14.07px;
+  color: #1679a8;
+  text-decoration: underline;
+  display: inline-block;
+  vertical-align: bottom;
+  margin-left: 12px;
+  line-height: 33px;
+  padding-left: 26px;
+  position: relative;
+}
+
+.correct .change:before {
+  content: "";
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: url(../img/change.png)
+    /*tpa=http://www.avtobaffer.com/images/change.png*/
+  ;
+  position: absolute;
+  left: 0;
+  top: 7px;
+}
+
+.correct .save {
+  height: 33px;
+  line-height: 33px;
+  width: 135px;
+  text-align: center;
+  font-size: 14.06px;
+  vertical-align: top;
+  display: none;
+  margin-left: 20px;
+  padding: 0;
+}
+
+.correct .save:before {
+  display: none;
+}
+
+.main-success {
+  padding-bottom: 300px;
+  background: url(../img/success.jpg)
+    /*tpa=http://www.avtobaffer.com/images/success.jpg*/
+    no-repeat top;
+}
+
+.main-success header {
+  margin-bottom: 45px;
+}
+
+.main-success h1 {
+  font-size: 30px;
+  color: #1679a8;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+.main-success-wrap {
+  padding: 60px 90px;
+  background: #fff;
+  border-radius: 5px;
+}
+
+.main-success-wrap .question {
+  font-size: 14px;
+  font-weight: 300;
+  margin-bottom: 10px;
+}
+
+.main-success-wrap p {
+  margin-bottom: 35px;
+}
+
+.main-success-wrap .on {
+  font-size: 18px;
+  color: #1679a8;
+  position: relative;
+  padding-left: 38px;
+}
+
+.main-success-wrap .on:before {
+  content: "";
+  display: block;
+  width: 37px;
+  height: 37px;
+  background: url(../img/on.png)
+    /*tpa=http://www.avtobaffer.com/images/on.png*/
+  ;
+  position: absolute;
+  left: 0;
+  top: -18px;
+}
+
+.main-success-wrap .correct {
+  margin-bottom: 40px;
+  text-align: left;
+}
+
+.main-car {
+  display: none;
+}
+
+.share-img {
+  display: none;
+}
+
+input:invalid {
+  box-shadow: none;
+}
+
+@media screen and (max-width: 1060px) {
+  .container {
+    width: 95% !important;
+  }
+
+  .in-stock {
+    display: none;
+  }
+
+  header .address {
+    margin-left: 30px;
+  }
+
+  .address {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .right-info .phone {
+    font-size: 19px;
+  }
+
+  .main-car {
+    display: block;
+  }
+
+  .main {
+    background: url(../img/success.jpg)
+      /*tpa=http://www.avtobaffer.com/images/success.jpg*/
+      no-repeat top;
+    height: auto;
+    background-size: cover;
+  }
+
+  .main-wrap {
+    text-align: center;
+  }
+
+  .main-wrap .price {
+    margin: 0;
+    margin-bottom: 25px;
+    display: inline-block;
+    float: none;
+  }
+
+  .main-wrap ul {
+    float: none;
+    overflow: hidden;
+    clear: both;
+    text-align: left;
+  }
+
+  .main-wrap ul li {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .main-wrap .btn {
+    margin-bottom: 25px;
+  }
+
+  .risk-item img {
+    max-width: 35%;
+  }
+
+  .author {
+    height: auto;
+    padding: 30px 0;
+    background: url(../img/author-mobile.jpg)
+      /*tpa=http://www.avtobaffer.com/images/author-mobile.jpg*/
+      no-repeat top;
+    background-size: cover;
+    overflow: hidden;
+  }
+
+  .author-bottom {
+    padding: 0;
+    float: none;
+    text-align: center;
+  }
+
+  .need-item {
+    width: 182px;
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px;
+  }
+
+  .need-item h3 {
+    font-size: 14px;
+  }
+
+  .result-item {
+    float: none;
+    display: inline-block;
+    vertical-align: top;
+    margin: 5px !important;
+  }
+
+  .need {
+    height: auto;
+    padding: 30px 0;
+    padding-bottom: 75px;
+    background-size: cover;
+  }
+
+  .problem-wrap .left {
+    padding: 0;
+  }
+
+  .problem-wrap .right {
+    padding: 0;
+  }
+
+  .problem-wrap .right:before {
+    display: none;
+  }
+
+  .shema {
+    padding: 40px 0 20px 0;
+  }
+
+  .video-wrap {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 */
+    padding-top: 25px;
+    height: 0;
+    display: block !important;
+  }
+
+  .video-wrap iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+  .owl-carousel {
+    padding: 0 50px;
+  }
+
+  .owl-prev {
+    left: 0;
+  }
+
+  .owl-next {
+    right: 0;
+  }
+
+  .share {
+    height: auto;
+    padding: 30px 0;
+    background: url(../img/share-mobile.jpg)
+      /*tpa=http://www.avtobaffer.com/images/share-mobile.jpg*/
+      no-repeat top;
+    background-size: cover;
+  }
+
+  .share-wrap form:before {
+    display: none;
+  }
+
+  .share-wrap .price {
+    margin-bottom: 25px;
+  }
+
+  footer .address {
+    margin-left: 30px;
+  }
+
+  .share-img {
+    display: block;
+    margin-bottom: 25px;
+  }
+
+  .main-success {
+    background-size: cover;
+    padding-bottom: 50px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  header .address {
+    float: right;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .address:before,
+  .address:after {
+    display: none;
+  }
+
+  .author-wrap .img {
+    float: none;
+    margin: 0 auto;
+    margin-bottom: 25px;
+  }
+
+  .author-wrap .right {
+    float: none;
+    width: 100%;
+    padding: 0;
+  }
+
+  .problem-wrap .left {
+    width: 100%;
+    margin-bottom: 25px;
+  }
+
+  .problem-wrap .right {
+    width: 100%;
+    text-align: center;
+  }
+
+  .problem-wrap .left h3 {
+    padding: 0;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+
+  .problem-wrap .right h3 {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 25px;
+  }
+
+  .problem-wrap .info {
+    max-width: 335px;
+    margin: 0 auto;
+  }
+
+  .problem-box .btn:after {
+    display: none;
+  }
+
+  .problem-box p br {
+    display: none;
+  }
+
+  .risk-item:after {
+    display: none;
+  }
+
+  .risk-item {
+    padding: 0 10px;
+  }
+
+  .risk-item h3 {
+    font-size: 16px;
+  }
+
+  .share-wrap .left {
+    width: 100%;
+    padding: 0;
+  }
+
+  .easy-item {
+    margin-bottom: 5px;
+  }
+
+  .share-wrap .right {
+    float: none;
+    width: 100%;
+    max-width: 340px;
+    margin: 0 auto;
+  }
+
+  footer .address {
+    float: right;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  .right-info {
+    clear: both;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  header .logo {
+    float: none;
+    display: block;
+    text-align: center;
+  }
+
+  header {
+    text-align: center;
+  }
+
+  header .address {
+    float: none;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+
+  .address {
+    display: inline-block;
+    text-align: left;
+  }
+
+  .right-info {
+    float: none;
+    display: inline-block;
+  }
+
+  .right-info .call {
+    float: none;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .main-wrap ul li {
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    background: #0f5698;
+    border-radius: 8px;
+  }
+
+  h2.title:before,
+  h2.title:after {
+    display: none;
+  }
+
+  h2.title {
+    padding: 0;
+  }
+
+  .problem-wrap .right h3,
+  .problem-wrap .left h3 {
+    font-size: 15px;
+  }
+
+  .problem-box {
+    padding: 25px 10px;
+  }
+
+  .warning-item {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 15px;
+  }
+
+  .warning-item p {
+    padding: 0;
+  }
+
+  .risk-item {
+    width: 100%;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .risk-item:last-child {
+    margin-bottom: 0px;
+  }
+
+  .problem {
+    padding-bottom: 0;
+  }
+
+  footer .logo {
+    float: none;
+    display: block;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+
+  footer .address {
+    float: none;
+    margin-left: 0;
+  }
+
+  footer {
+    text-align: center;
+  }
+
+  .right-info .phone {
+    margin-bottom: 10px;
+  }
+
+  .main-success-wrap {
+    padding: 30px 20px;
+  }
+
+  .share-wrap form button {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: 1061px) and (max-width: 1610px) {
+  .main {
+    height: 700px;
+  }
+}
+
+/* dfddsafdfadsfasdfsadfasf */
+.advantages {
+  text-align: center;
+  padding: 50px 0;
+  background: url(../img/shema.jpg);
+  background-position: bottom;
+  background-size: cover;
+}
+
+.advantages h2 {
+  font-weight: 1000;
+}
+
+.advanteges__blocks {
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.advantages__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  margin-top: 15px;
+}
+
+@media (max-width: 480px) {
+  .advantages__item {
+    width: 100%;
+  }
+}
+
+.advantages__item p {
+  text-align: center;
+}
+
+.advantages__item_img {
+  width: 75px;
+  height: 75px;
+}
+
+.advantages__item_text p {
+  margin-top: 15px;
+  max-width: 300px;
+}
+
+.slick img {
+  margin: auto;
+  width: 90%;
+}
+
+@media (max-width: 480px) {
+  .slick img {
+    width: 90%;
+  }
+
+  input[type="tel"],
+  input[type="text"] {
+    padding-left: 20px;
+  }
+}
+
+.slick {
+  margin: 50px 0;
+}
