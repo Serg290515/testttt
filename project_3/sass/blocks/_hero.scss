@@ -1,0 +1,157 @@
+.hero {
+  padding: 100px 0 0 0;
+  background: #ffe3e3;
+
+  &__main {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  &__text-1 {
+    position: relative;
+    left: 135px;
+    min-width: 460px;
+    margin: auto;
+    text-align: center;
+
+    & h2 {
+      margin-bottom: 25px;
+    }
+
+    & p {
+      font-family: "Open Sans Regular";
+      font-size: 18px;
+      margin-bottom: 15px;
+    }
+  }
+
+  &__img {
+    &-1 {
+      width: 360px;
+      position: relative;
+      left: 80px;
+      margin: auto;
+    }
+
+    &-2 {
+      position: relative;
+      left: 135px;
+    }
+  }
+
+  &__price {
+    margin-top: 20px;
+    &-text {
+      display: flex;
+      justify-content: center;
+    }
+
+    & p {
+      margin-bottom: 0;
+    }
+
+    &-1 {
+      font-family: "Noto Sans Bold";
+      margin-left: 0;
+      color: rgb(189, 0, 0);
+      font-size: 30px;
+      font-weight: 700 !important;
+    }
+
+    &-2 {
+      margin-left: 25px;
+      font-size: 30px;
+      text-decoration: line-through;
+      color: rgb(71, 71, 71);
+    }
+  }
+
+  &__btn {
+    margin: auto;
+    display: block;
+    margin-top: 15px;
+    font-family: "Noto Sans Bold";
+    font-weight: 400;
+    font-style: normal;
+    font-size: 24px;
+    color: #ffffff;
+    background: linear-gradient(to bottom, #bf6767 0%, #702121 100%);
+    border-radius: 255px;
+    border: none;
+
+    & a {
+      padding: 10px 30px;
+      line-height: 2;
+    }
+
+    &:hover {
+      background: linear-gradient(to bottom, #e69393 0%, #a84343 100%);
+      cursor: pointer;
+    }
+  }
+
+  &__footer {
+    padding: 0;
+  }
+}
+
+.hero__text-1_top {
+  margin-top: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+
+.hero__form {
+  border-color: rgba(204, 204, 204, 1);
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 4px;
+  color: rgba(0, 0, 0, 1);
+  padding-left: 10px;
+  height: 40px;
+  font-size: 14px;
+  font-family: "Open Sans Regular";
+  font-weight: 400;
+  margin-top: 10px;
+
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+.hero__text {
+  margin: auto;
+}
+
+@media (max-width: 480px) {
+  .hero__text-1 {
+    position: static;
+  }
+
+  .hero {
+    padding: 100px 0 30px 0;
+  }
+
+  .hero__footer {
+    padding: 30px 0;
+  }
+
+  .hero__price {
+    position: static;
+  }
+
+  .hero__img-1 {
+    display: none;
+  }
+
+  .hero__img-2 {
+    display: none;
+  }
+
+  .hero__text-1 {
+    min-width: 280px;
+  }
+}

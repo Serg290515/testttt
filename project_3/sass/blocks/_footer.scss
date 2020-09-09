@@ -1,0 +1,17 @@
+.footer__main {
+  padding: 15px 0;
+
+  & a {
+    display: block;
+    font-family: 'Open Sans Regular';
+    font-size: inherit;
+    font-style: normal;
+    font-weight: 300;
+    text-align: center;
+    color: #000;
+  }
+}
+
+.btn_input {
+  padding: 10px 30px;
+}

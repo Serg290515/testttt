@@ -1,0 +1,46 @@
+.natural {
+  padding: 50px 0;
+
+  &_center {
+    max-width: 1000px;
+    margin: auto;
+  }
+
+  &__blocks {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__block {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 355px;
+    text-align: center;
+  }
+
+  &__img {
+    width: 275px;
+  }
+
+  & p {
+    margin-top: -45px;
+    font-size: 16px;
+    line-height: 1.4;
+    color: #111;
+    max-width: 360px;
+    font-family: 'Open Sans Regular';
+  }
+
+  & h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .natural {
+    &__blocks {
+      flex-wrap: wrap;
+    }
+  }
+}
