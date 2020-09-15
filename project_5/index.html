@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>Зонтики Капсулы</title>
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.png" type="image/png">
+    <link rel="shortcut icon" href="favicon.png" type="image/png">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width" />
+
+    <meta charset="UTF-8">
+    <meta property="og:type" content="article" />
+    <meta property="og:title" content="ОСЕННИЙ ТРЭНД, ЗОНТ-КАПСУЛА" />
+    <meta name="keywords"
+        content="Капсульный зонтик – это практичная и стильная вещь, которая уже успела стать трендом.">
+    <meta name="author" content="@UA_UMBRELLA">
+    <meta property="og:image" content="thumbnail.png">
+    <meta property="og:description"
+        content="Капсульный зонтик – это практичная и стильная вещь, которая уже успела стать трендом." />
+    <meta property="og:url" content="" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&display=swap" rel="stylesheet">
+    <link href="assets_pages/css/popup-m1-style.css?v=0.0.3" rel="stylesheet" type="text/css" />
+
+    <link rel="stylesheet" href="css/reset.css" type="text/css">
+    <link rel="stylesheet" href="css/style.css" type="text/css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Open Sans', sans-serif;
+            background-color: #fff;
+            /* background-image: url('https://lh3.googleusercontent.com/proxy/ubsUAgFYZrVERjJPcKi8eXM-3fZOAC2BF_qUGu5gKIC8xaf3CRgYuIGr2J_2Yg0pIgbbRF6iiICc3f5otUfolAEuI1biiMIreRK8J_Ft3I4qqjA858EeKTCcT3rS1cdWNfLr7R4VXLA8eq1phOn4nA'); */
+        }
+
+        .post img {
+            width: auto;
+            height: 3rem;
+            margin-right: 1rem;
+            filter: grayscale(1)
+        }
+
+        .post {
+            display: flex;
+            width: 100%;
+            margin: 0%;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .post span.post-text {
+            margin-top: 1rem;
+        }
+
+        .swiper-container {
+            width: 100%;
+
+        }
+
+        .swiper-slide {
+            background-position: center;
+            background-size: cover;
+            width: 480px;
+            height: 480px;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="thankYouModal" tabindex="-1" role="dialog" aria-labelledby="thankYouModalTitle"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title lead" id="thankYouModalTitle">Спасибо!<i class="fa fa-check-circle ml-2"
+                            style="color:#28a745"></i></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    ID вашего заказа: <b id="order_id"></b> <br>
+                    <blockquote>Спасибо, <span id="order_name"></span> , что оставили заявку на нашем сайте!
+                    </blockquote> <br>
+                    <p class="">Мы свяжемся с вами в близжайшее время по номеру <span id="order_phone"></span>!</p>
+
+                    <p class="text-muted small mt-2">&#128522; Следите за нашим инстаграмом! <a
+                            href="https://www.instagram.com/ua_umbrella?r=nametag"><i class="fa fa-instagram"></i></a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main_wrapper" id="main_wrapper">
+        <header class="offer_section">
+
+            <div class="image_block">
+                <img id="main_image" src="">
+            </div>
+            <div class="offer_bull">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide" style="background-image:url(images/red.jpg)"></div>
+                        <div class="swiper-slide" style="background-image:url(images/blue.png)"></div>
+                        <div class="swiper-slide" style="background-image:url(images/pink.jpg)"></div>
+                    </div>
+                    <!-- Add Pagination -->
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+            <div class="price" style="display: flex; justify-content: space-between; align-items: center; background: #fff;">
+                <div class="price__normal" style="font: normal normal normal 24px/1 FontAwesome;
+                display: flex;
+                justify-content: center;
+                padding-bottom: 10px;
+                flex-direction: column;
+                height: 100px;
+                width: 250px;
+                background-position: center;
+                color: #faf7f7;
+                text-align: center;
+                background-image: url(../images/price-1.png);
+                background-size: cover;">
+                    <p style="z-index: 100;">Обычная цена:</p>
+                    <p style="text-decoration: line-through; z-index: 100;"> 459 грн </p>
+                </div>
+                <div class="price__normal" style="font: normal normal normal 24px/1 FontAwesome; margin-bottom: 10px; text-align: center; color: #000;">
+                    <p>Цена сегдня:</p>
+                    <p>269 грн</p>
+                </div>
+                <div class="price__img" style="margin-right: -1px;">
+                    <img src="images/price.png" alt="" style="height: 100px;">
+                </div>
+            </div>
+            <div class="pros">
+                <div class="row pros-item" data-aos="fade-right">
+                    <p class="m-0">
+                        <i class="fa fa-check-circle"></i>&nbsp;&nbsp;Практичная и стильная вещь, которая уже успела
+                        стать трендом
+                    </p>
+                </div>
+                <hr>
+                <div class="row pros-item" data-aos="fade-right">
+                    <p class="m-0"><i class="fa fa-check-circle"></i>&nbsp;&nbsp;Легкий вес, вам не доставит трудностей
+                        носить зонт с собой хоть каждый день.</p>
+                </div>
+                <hr>
+                <div class="row pros-item" data-aos="fade-right">
+                    <p class="m-0"><i class="fa fa-check-circle"></i>&nbsp;&nbsp;Зонт-капсула легко разместится в
+                        маленькой дамской сумочке, в кармане куртки или в бардачке автомобиля</p>
+                </div>
+            </div>
+            <!-- <div  class="price_block clearfix" style="background-color: #FFB74D;">
+                <div class="price_item old">
+                    <div class="text" style="color:#37474F">Обычная цена:</div>
+                    <div class="value"><span class="price_land_s2" style="color:#37474F">429</span><small
+                            class="price_land_curr" style="color:#37474F">&#8372;</small></div>
+                </div>
+                <div class="discount">Скидка <b>-30%</b></div>
+                <div class="price_item new">
+                    <div class="text" style="color:#263238">Цена по акции:</div>
+                    <div class="value"><span class="price_land_s1" style="color:#263238">299</span><small
+                            class="price_land_curr" style="color:#263238">&#8372;</small></div>
+                </div>
+            </div> -->
+            <!-- <img src="images/huina.png" alt=""> -->
+
+            <!-- <div class="present">
+                <img src="images/tangle.png" alt="" class='present-img'>
+                <p class="present-text">
+                    &nbsp;Расческа Tangle Teezer <br>
+                    
+                    <span class="color-red">
+                        В ПОДАРОК!
+                    </span>
+                </p>
+            </div> -->
+
+            <div class="order_block" style="background-color: #8a1724;" id="scrollHere">
+                <span id="countdown" class="timer"></span>
+                <div class="timer_block clearfix">
+                    <div class="time p-0" style="color:#fff;font-weight: 600;">Предложение действует</div>
+                    <div class="timer clearfix">
+                        <div class="timer_item" data-aos="flip-left">
+                            <div id="count_hours" class="count"></div>
+                            <div class="text">ЧАСОВ</div>
+                        </div>
+                        <div class="timer_item" data-aos="flip-left">
+                            <div id="count_minutes" class="count"></div>
+                            <div class="text">МИНУТ</div>
+                        </div>
+                        <div class="timer_item" data-aos="flip-left">
+                            <div id="count_seconds" class="count"></div>
+                            <div class="text">СЕКУНД</div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <span id="errors"></span>
+                <form class="main-order-form m1-form" id="main_form">
+                    <input type="text" name="name" placeholder="Введите ваше имя" required="" value="" minlength="2"
+                        data-aos="zoom-out-down">
+                    <input type="tel" name="phone" placeholder="Введите ваш телефон" required="" value="" minlength="9"
+                        maxlength="13" data-aos="zoom-out-down">
+                    <button id="sendMessage" class="button-m" type="button" data-aos="zoom-in">Оформить заказ</button>
+                    <input type="hidden" name="l" value="1c473d9636867b9f1bf36a2c46deb13f872ecc41" />
+                    <input type="hidden" name="a99b6b917b7ec3f290d7c753529a75904988016b"
+                        value="NzY2OGJmNDYwNjdlMTRiYjBiZGQwMzQwZmNlN2UwYmE5MTE=" />
+                </form>
+
+                <span class="row post " data-aos="flip-down">
+                    <img src="images/poshta.png" alt=""> <a
+                        href="https://podzontom.km.ua/index.php?route=information/information&information_id=5"
+                        class="lead post-text" style="color:#fff">&nbsp; Защита покупателя<img class="protec"
+                            src="https://www.iconfinder.com/data/icons/credit-card-payments/48/32-512.png" alt=""></a>
+                </span>
+
+                <!-- <div class="products_count">Осталось товара по акции: <span><b class="lastpack">14</b> шт.</span></div> -->
+
+
+                <span class="video-rolik" data-aos="zoom-in">
+                    <iframe style="box-shadow: 0 2px 5px rgba(0,0,0,0.16), 0 2px 5px rgba(0,0,0,0.23);" width="560"
+                        height="270" src="https://www.youtube.com/embed/fYO7obsfqJM" frameborder="0"
+                        allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen></iframe>
+                </span>
+
+
+            </div>
+        </header>
+        <!-- <section class="sect2">
+            <img src="images/main.png" alt="">
+
+        </section> -->
+        <section class="sect2" data-aos="fade-down">
+            <div class="lead text-c">
+                <span class='blockquote-text'>
+                    <p class="p-0 m-0">Такой зонтик с легкостью поместится у вас в кармане, сумочке, рюкзаке.</p> <br>
+                    <p class="p-0 m-0">Легкий вес, компактный размер и удобный футляр-капсула - такой зонт можно носить
+                        с собой хоть каждый день.</p>
+                </span>
+            </div>
+            <img src="images/block4.png" alt="" data-aos="fade-down" style="background-image: url(../images/bg.png);
+            background-attachment: fixed;
+            background-position: center;">
+            <img src="images/1.png" alt="" data-aos="fade-down" style="background-image: url(../images/bg.png);
+            background-attachment: fixed;
+            background-position: center;">
+
+
+        </section>
+        <section class="sect3" data-aos="fade-down">
+
+
+        </section>
+
+
+        <footer class="footer_section copyright" style="background-color: #8c2e36;color:#fff">
+            <button id="sendMessageDown" class="button-m mt-4" type="button">Заказать со скидкой</button>
+            <a href="politics.html">Политика конфиденциальности</a>
+            <a href="agreement.html">Пользовательское соглашение</a>
+
+            <p class="microtext">
+                * - подарок подразумевает покупку данного товара за 0.01 грн.
+            </p>
+            <p class="microtext mt-0">
+                Данный товар не является оригиналом, а также не претендует на авторские права бренда "Tangle Teezer"
+            </p>
+        </footer>
+        <!-- /footer -->
+    </div>
+    <!-- JS -->
+
+    <script type="text/javascript">
+        // var phonePrefix = '+38';
+    </script>
+
+
+
+    <script>
+        var comebackerFormId = '4';
+    </script>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"
+        integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-177823651-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-177823651-1');
+    </script>
+
+
+    <script>
+        ! function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '3807911785904720');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=3807911785904720&ev=PageView&noscript=1" /></noscript>
+
+    <script src="assets_pages/js/popup-m1.js?v=0.0.1" type="text/javascript"></script>
+
+
+    <script type="text/javascript" src="assets_pages/js/phonePrefix.js"></script>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="js/swiper.min.js"></script>
+
+    <script type="text/javascript" src="js/script.js"></script>
+
+</body>
+
+</html>

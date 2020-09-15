@@ -1,0 +1,20 @@
+AOS.init();let items={mainImg:document.querySelector("#main_image"),mainImgSrc:document.querySelector("#main_image").src,topLine:document.querySelector(".top_line"),colorIcon:document.querySelector("#color_icon"),hours:document.querySelector("#count_hours"),minutes:document.querySelector("#count_minutes"),seconds:document.querySelector("#count_seconds"),phone:document.querySelector("input[name='phone']"),name:document.querySelector("input[name='name']"),};window.addEventListener("keyup",function(event){if(event.keyCode===13){event.preventDefault();$("#sendMessage").click();}});$('.card-img > img').mouseenter(evt=>{items.mainImg.src=evt.target.src;items.topLine.style.backgroundColor=evt.target.getAttribute('change-color');items.colorIcon.style.color=evt.target.getAttribute('change-color');}).mouseleave(evt=>{items.mainImg.src=items.mainImgSrc;items.topLine.style.backgroundColor="#FFF176";items.colorIcon.style.color="black";});var upgradeTime=76234;var seconds=upgradeTime;function timer(){var days=Math.floor(seconds/24/60/60);var hoursLeft=Math.floor((seconds)-(days*86400));var hours=Math.floor(hoursLeft/3600);var minutesLeft=Math.floor((hoursLeft)-(hours*3600));var minutes=Math.floor(minutesLeft/60);var remainingSeconds=seconds%60;function pad(n){return(n<10?"0"+n:n);}
+items.hours.innerText=pad(hours);items.minutes.innerText=pad(minutes);items.seconds.innerText=pad(remainingSeconds);if(seconds==0){clearInterval(countdownTimer);}else{seconds--;}}
+var countdownTimer=setInterval('timer()',1000);$('input[name="name"]').on("input",evt=>{if(evt.target.value.toLocaleLowerCase()==='ты пидар'||evt.target.value.toLocaleLowerCase()==='ты пидор')
+{evt.target.value="САМ ПИДОР, СОСИ БЕМБУ!";}else if(evt.target.value.toLocaleLowerCase()==='пидор'||evt.target.value.toLocaleLowerCase()==='пидар')
+{evt.target.value="Ясно, шутничок нашелся";}
+items.name=evt.target.value;});function addZero(num)
+{return num>9?num+"":`0${num}`;}
+function now(){let now=new Date();return `${now.getFullYear()}-${addZero(now.getMonth()+1)}-${addZero(now.getDate())} ${addZero(now.getHours())}:${addZero(now.getMinutes())}:${addZero(now.getSeconds())}`;}
+$("#sendMessage").on("click",evt=>{if(document.querySelector("#main_form").checkValidity())
+{let now=new Date();let n=document.querySelector("input[name='name']").value;let p=document.querySelector("input[name='phone']").value;$("#order_phone").text(p);$("#order_name").text(n);let id=new Date().getTime();let message=`${n} - ${p} сделал заказ! ID:${id}`;$.get({url:"/sendMessage?message="+message,success:function(result){}});$("#order_id").text(id);$("#thankYouModal").modal('show');}else{let message=`<div class="alert alert-danger alert-dismissible fade show" role="alert" style="    height: 100%;
+        border-radius: .5rem;
+        font-size: 0.7rem;
+        width: 400px;
+        border: 1px solid  #ff2153;
+        margin: 1rem auto;">
+        <b style="font-size: 1rem !important;text-align: center;">Поля номер или имя пустые! <br> Либо телефон был указан в неверном формате.</b>
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close" style="height: 100%;;">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>`;$("#errors").html(message);}});$("#sendMessageDown").on("click",evt=>{items.name.focus();$("html, body").animate({scrollTop:$("#scrollHere").offset().top},300);});$("#up").on("click",evt=>{$("html, body").animate({scrollTop:$("#main_wrapper").offset().top},300);});var swiper=new Swiper('.swiper-container',{effect:'coverflow',grabCursor:true,centeredSlides:true,slidesPerView:'auto',coverflowEffect:{rotate:50,stretch:0,depth:100,modifier:1,slideShadows:true,},loop:true,autoplay:{delay:3000,},pagination:{el:'.swiper-pagination',},});let bulletColors={0:"#c62828",1:"#1565c0",2:"#d81b60"};$(".swiper-pagination-bullet").each((index,el)=>{el.style.backgroundColor=bulletColors[index];});
