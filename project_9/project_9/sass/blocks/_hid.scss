@@ -1,0 +1,31 @@
+.form__hh {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.form__h {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 560px;
+  margin: auto;
+  padding: 40px 45px;
+  background-color: #fff;
+  & h3 {
+    color: #000;
+  }
+  & p {
+    margin-bottom: 20px;
+    text-align: center;
+  }
+}
+.input__h {
+  width: 100%;
+  margin: auto;
+  margin-bottom: 20px;
+  color: #000;
+}
+.btm__f {
+  width: auto;
+  margin-top: 10px;
+}
