@@ -1,0 +1,61 @@
+.instructions {
+  padding-bottom: 70px;
+  border-bottom: solid 1px #fff;
+  &__img {
+    width: 40px;
+    transform: rotate(-90deg);
+    & img {
+      animation-name: instructions__img;
+      align-self: flex-end;
+      animation-duration: 2s;
+      animation-iteration-count: infinite;
+    }
+  }
+  &__blocks {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 70px;
+  }
+  &__block {
+    display: flex;
+    align-items: center;
+    width: 440px;
+    & p {
+      max-width: 370px;
+      color: #ffffff;
+      font-family: 'Roboto',Arial,sans-serif;
+      line-height: 1.55;
+      font-weight: 700;
+    }
+    & h6 {
+      margin-right: 25px;
+    }
+  }
+}
+@keyframes instructions__img {
+  0%   { transform: translateY(25px); }
+  50%  { transform: translateY(-25px); }
+  100% { transform: translateY(25px); }
+}
+@media (max-width: 1200px) {
+  .instructions {
+    &__img {
+      display: none;
+    }
+  }
+}
+@media (max-width: 760px) {
+  .instructions {
+    &__blocks {
+      flex-wrap: wrap;
+      &:last-child {
+        margin: 0;
+      }
+    }
+    &__block {
+      width: 100%;
+      margin-bottom: 25px;
+    }
+  }
+}
