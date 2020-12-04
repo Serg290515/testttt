@@ -1,0 +1,24 @@
+.buy__f {
+  padding: 50px 0;
+  & img {
+    width: 350px;
+  }
+  &_main {
+    & h2 {
+      line-height: 1.2;
+    }
+  }
+}
+.btn__f {
+  display: block;
+  margin: auto;
+  margin-top: 50px;
+}
+
+@media (max-width: 770px) {
+  .buy__f {
+    & img {
+      width: 230px;
+    }
+  }
+}

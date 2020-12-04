@@ -1,0 +1,41 @@
+.stock {
+  background-image: url('../img/stock/img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+  &__main {
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & h3 {
+      color: #fb0619;
+      padding-bottom: 10px;
+    }
+    & h6 {
+      padding-bottom: 10px;
+    }
+  }
+  &__description {
+    padding-bottom: 70px;
+  }
+  &__descriptionn {
+    padding-top: 70px;
+  }
+  &__title {
+    padding-bottom: 180px;
+  }
+}
+@media (max-width: 480px) {
+  .stock{
+    &__title{
+      max-width: 280px;
+    }
+    &__descriptionn {
+      display: none;
+    }
+  }
+}

@@ -1,0 +1,44 @@
+.properties {
+  & img {
+    width: 80px;
+    margin-bottom: 50px;
+  }
+  & p {
+    font-size: 22px;
+    max-width: 215px;
+    text-align: center;
+  }
+  &__blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  &__block {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+    align-items: center;
+    margin-top: 100px;
+  }
+}
+@media (max-width: 770px) {
+  .properties{
+    & h4 {
+      font-size: 30px;
+    }
+    &__block {
+      width: 50%;
+    }
+  }
+}
+@media (max-width: 480px) {
+  .properties{
+    & img {
+      margin-bottom: 20px;
+    }
+    &__block {
+      margin-top: 50px;
+      width: 100%;
+    }
+  }
+}

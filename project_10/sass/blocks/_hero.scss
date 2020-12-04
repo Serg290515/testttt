@@ -1,0 +1,28 @@
+.hero {
+  background-image: url('../img/hero/img.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  text-align: center;
+  & h2 {
+    padding-bottom: 35px;
+  }
+  &-bg {
+    height: 100vh; background-image: linear-gradient( to top, rgba(0,0,0,0.40), rgba(0,0,0,0.40));
+  }
+  &__main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  &__btn {
+    width: 200px;
+    height: 55px;
+    & a {
+      font-weight: 600;
+    }
+  }
+}
