@@ -21,7 +21,8 @@
         <div class="hero-bg">
           <div class="container">
             <div class="hero__main">
-              <h2>SALE!</h2>
+              <h2>SALE!<br>
+                Чёрная пятница!</h2>
               <h2 style="color: #f9f4f5; line-height: 40px;">Airpods Pro со скидкой 30%!</h2>
               <h5>Оформи заказ прямо сейчас!</h5>
               <div class="countdown-t">
@@ -236,22 +237,43 @@
       <div class="buy buy__f">
         <div class="container">
           <div class="buy__main buy__f_main">
-            <h4>APPLE AIRPODS PRO</h4>
-            <h2>SALE!<br>
-               СКИДКА 30%! <br>
-              УСПЕЙ КУПИТЬ! <br>
-            </h2>
-            <div class="buy__blocks">
-              <div class="buy__block buy__block-f">
-                <a href="#form" class="pop"></a>
-                <div class="buy__img buy__img-f"><img src="img/f/img-2.jpg" alt="img"></div>
-                <div class="buy__subtitle">
-                  <p class="new-price">3999 грн.</p>
-                  <p class="old-price">5712 грн.</p>
+            <div class="buy__slider">
+              <div class="buy__slider-item">
+                <h4>APPLE AIRPODS PRO</h4>
+                <h2>SALE!<br>
+                   СКИДКА 30%! <br>
+                  УСПЕЙ КУПИТЬ! <br>
+                </h2>
+                <div class="buy__blocks">
+                  <div class="buy__block buy__block-f">
+                    <a href="#form" class="pop"></a>
+                    <div class="buy__img buy__img-f"><img src="img/f/img-2.jpg" alt="img"></div>
+                    <div class="buy__subtitle">
+                      <p class="new-price">3999 грн.</p>
+                      <p class="old-price">5712 грн.</p>
+                    </div>
+                  </div>
                 </div>
               </div>
-            </div>
-            <button class="btn hero__btn btn__f" type="submit"><a href="#form" class="pop">Оформить заказ</a></button>
+              <div class="buy__slider-item">
+                <h4>APPLE AIRPODS 2</h4>
+                <h2>SALE!<br>
+                   СКИДКА 30%! <br>
+                  УСПЕЙ КУПИТЬ! <br>
+                </h2>
+                <div class="buy__blocks">
+                  <div class="buy__block buy__block-f">
+                    <a href="#formm" class="pop"></a>
+                    <div class="buy__img buy__img-f"><img src="img/buy/img-1.png" alt="img"></div>
+                    <div class="buy__subtitle">
+                      <p class="new-price">2999 грн.</p>
+                      <p class="old-price">4290 грн.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+          </div>
+            <button class="btn hero__btn btn__f" type="submit"><a href="#formm" class="pop">Оформить заказ</a></button>
           </div>
         </div>
       </div>
@@ -310,6 +332,52 @@
         autoplay: true,
         dots: true,
         autoplaySpeed: 5000,
+        responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+              arrows: false,
+            },
+          },
+          {
+            breakpoint: 1024,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              infinite: true,
+              dots: true,
+              arrows: false,
+            },
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+            },
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1,
+              arrows: false,
+            },
+          },
+        ],
+      });
+      $(".buy__slider").slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        dots: true,
+        autoplaySpeed: 2000,
         responsive: [
         {
             breakpoint: 1200,
